@@ -143,6 +143,151 @@
             color: #666;
             font-size: 12px;
         }
+        
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                background-color: #f0f0f0;
+            }
+            
+            header {
+                border-radius: 25px;
+                margin-bottom: 15px;
+                padding: 15px;
+            }
+            
+            header h1 {
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            .datum-bereich {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            
+            .datum-input {
+                background-color: #d0d0d0;
+                border: none;
+                border-radius: 15px;
+                padding: 8px 16px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            
+            .notification {
+                position: static;
+                margin: 0 10px 15px 10px;
+                background-color: #e8e8e8;
+                border-radius: 25px;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Mobile: Stack days vertically */
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+            }
+            
+            section {
+                border-radius: 25px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                min-height: auto;
+                background-color: #e8e8e8;
+            }
+            
+            .tag-header {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 15px;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .calendar-icon {
+                display: none; /* Hide calendar icons on mobile */
+            }
+            
+            article {
+                background-color: white;
+                border-radius: 15px;
+                padding: 12px;
+                margin-bottom: 10px;
+                min-height: 60px;
+                border: none;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+            
+            article h3 {
+                font-size: 12px;
+                margin-bottom: 8px;
+                color: #666;
+            }
+            
+            .eintrag-feld {
+                height: 40px;
+                font-size: 14px;
+                padding: 5px 0;
+            }
+            
+            /* Mobile: Collapse sections by default, show day name prominently */
+            .tag-header {
+                cursor: pointer;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 15px;
+                margin-bottom: 10px;
+            }
+            
+            /* Hide entries by default on mobile, show on tap */
+            section.collapsed article {
+                display: none;
+            }
+            
+            section.collapsed .tag-header::after {
+                content: " ▼";
+                float: right;
+            }
+            
+            section:not(.collapsed) .tag-header::after {
+                content: " ▲";
+                float: right;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+            
+            header {
+                padding: 12px;
+                margin-bottom: 10px;
+            }
+            
+            header h1 {
+                font-size: 20px;
+            }
+            
+            section {
+                padding: 12px;
+            }
+            
+            article {
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+            
+            .eintrag-feld {
+                height: 35px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -280,5 +425,49 @@
             </article>
         </section>
     </main>
+    
+    <script>
+        // Mobile responsive functionality
+        function initializeMobileFeatures() {
+            // Check if we're on mobile
+            if (window.innerWidth <= 768) {
+                // Add collapsed class to all sections initially on mobile
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    section.classList.add('collapsed');
+                });
+                
+                // Add click handlers for collapsible sections
+                const headers = document.querySelectorAll('.tag-header');
+                headers.forEach(header => {
+                    header.addEventListener('click', function() {
+                        const section = this.parentElement;
+                        section.classList.toggle('collapsed');
+                    });
+                });
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initializeMobileFeatures);
+        
+        // Re-initialize on window resize
+        window.addEventListener('resize', function() {
+            const sections = document.querySelectorAll('section');
+            if (window.innerWidth <= 768) {
+                // Add mobile functionality
+                sections.forEach(section => {
+                    if (!section.classList.contains('collapsed')) {
+                        section.classList.add('collapsed');
+                    }
+                });
+            } else {
+                // Remove mobile functionality
+                sections.forEach(section => {
+                    section.classList.remove('collapsed');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
