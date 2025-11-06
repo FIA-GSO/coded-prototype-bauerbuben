@@ -6,3 +6,6 @@ Leo 25.09 Recherche
 Arne, Moritz 25.09 mockup Handy erstellt
 Bennet 25.09 Laptop mockup erstellt
 Arne 2.10 AzubiHandyStartScreen hifi prototype
+Bennet 2.10 coded prototype Laptop
+Arne 2.10 coded protoytype Laptop
+Bennet Arne 2.10 Responsivenes

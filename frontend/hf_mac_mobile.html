@@ -47,11 +47,41 @@
             top: 20px;
             right: 20px;
             background-color: white;
-            padding: 10px 15px;
+            padding: 12px 15px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             font-size: 12px;
             color: #666;
+            border-left: 4px solid #4CAF50;
+            min-width: 200px;
+        }
+        
+        .notification-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+        
+        .notification-icon {
+            font-size: 14px;
+        }
+        
+        .notification-title {
+            font-weight: bold;
+            color: #333;
+            flex: 1;
+        }
+        
+        .notification-time {
+            font-size: 10px;
+            color: #999;
+        }
+        
+        .notification-content {
+            color: #555;
+            font-size: 11px;
+            line-height: 1.4;
         }
         
         main {
@@ -181,8 +211,23 @@
                 background-color: #e8e8e8;
                 border-radius: 25px;
                 padding: 15px;
-                text-align: center;
+                text-align: left;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-left: 4px solid #4CAF50;
+                min-width: auto;
+            }
+            
+            .notification-header {
+                justify-content: space-between;
+                margin-bottom: 8px;
+            }
+            
+            .notification-title {
+                font-size: 14px;
+            }
+            
+            .notification-content {
+                font-size: 13px;
             }
             
             /* Mobile: Stack days vertically */
@@ -304,8 +349,14 @@
     
     <!-- Notification -->
     <div class="notification">
-        Notification<br>
-        Hier klicken
+        <div class="notification-header">
+            <span class="notification-icon">🔔</span>
+            <span class="notification-title">Erinnerung</span>
+            <span class="notification-time">vor 2 Std.</span>
+        </div>
+        <div class="notification-content">
+            Berichtsheft für diese Woche noch unvollständig
+        </div>
     </div>
     
     <!-- Hauptinhalt mit Wochentagen -->
