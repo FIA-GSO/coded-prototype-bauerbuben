@@ -1,11 +1,12 @@
-Arne 18.09 userFlow new entrie, edit metadata
+Arne, Leo 18.09 userFlow new entry, edit metadata
 Moritz 18.09 userFlow view Unsigned entrys
 Bennet 25.09 bennet userFlows um und reflektiert über die Ergebnisse
 Bennet Moritz Arne 25.09 Metadaten Bearbeiten Desktop userFlow erstellt 
 Leo 25.09 Recherche
 Arne, Moritz 25.09 mockup Handy erstellt
 Bennet 25.09 Laptop mockup erstellt
-Arne 2.10 AzubiHandyStartScreen hifi prototype
-Bennet 2.10 coded prototype Laptop
-Arne 2.10 coded protoytype Laptop
+Arne, Leo 2.10 AzubiHandyStartScreen hifi prototype
+Bennet, Leo 2.10 coded prototype Laptop
+Arne, Moritz 2.10 coded protoytype Laptop
 Bennet Arne 2.10 Responsivenes
+Arne Bennet Moritz 6.11 functionality
