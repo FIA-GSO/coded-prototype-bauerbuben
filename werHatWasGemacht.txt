@@ -10,3 +10,4 @@ Bennet, Leo 2.10 coded prototype Laptop
 Arne, Moritz 2.10 coded protoytype Laptop
 Bennet Arne 2.10 Responsivenes
 Arne Bennet Moritz 6.11 functionality
+Bennet 13.11 Readme erstellt

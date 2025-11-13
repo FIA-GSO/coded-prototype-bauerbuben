@@ -141,7 +141,7 @@ Die Entwicklung erfolgte im Team. Die Aufgabenverteilung ist in der Datei `werHa
 - Arne: User Flows, Handy-Mockups, HiFi-Prototyping
 - Moritz: User Flows, Mockups
 - Bennet: Desktop-Mockups, Coded Prototype Laptop, Responsiveness
-- Leo: Recherche
+- Leo: Recherche, Coded Prototype Mobile, Dokumentation
 
 ---
 
@@ -182,19 +182,6 @@ Im Rahmen dieses Projekts wurden folgende Konzepte umgesetzt:
 
 ---
 
-## 🔮 Mögliche Erweiterungen
-
-Folgende Features könnten in Zukunft implementiert werden:
-
-- [ ] Backend-Integration mit Datenbank
-- [ ] Authentifizierung mit echtem Login-System
-- [ ] Export-Funktion (PDF-Generierung)
-- [ ] Benachrichtigungen für Ausbilder
-- [ ] Unterschriftenfunktion
-- [ ] Speicherung im Local Storage
-- [ ] Mehrsprachigkeit
-- [ ] Dark Mode
-
 ---
 
 ## 📝 Lizenz
@@ -211,4 +198,4 @@ Vielen Dank an unsere Berufsschullehrer für die Unterstützung und das vermitte
 
 **Erstellt von:** Team Bauerbuben  
 **Ausbildung:** Fachinformatiker für Anwendungsentwicklung  
-**Jahr:** 2024
+**Jahr:** 2025
